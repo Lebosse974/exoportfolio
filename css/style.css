@@ -1,0 +1,257 @@
+/*-------------------- couleur -------------------------------------/*
+/*  footer and header :#A3A1E7
+    couleur nav bar : #C4C4C4;
+*/
+
+
+
+
+
+
+body{
+    margin: 0px;
+}
+
+/*---------------------------- MON HEADER -------------------------*/
+
+#header{
+    background-color: #A3A1E7;
+    display: flex;
+   height: 150px;
+
+}
+
+#header h1{
+    text-align: center;
+    width: 500px;
+    height: 28px;
+    font-size: 48px;
+    padding-left: 400px;
+    padding-right: 70px;
+    padding-top: 15px;
+
+}
+
+#header img{
+
+    width: 550px;
+    height: 151px;
+
+}
+
+#header img,#header h1{
+    animation-name: daang;
+    animation-duration: 5s;
+}
+
+/*---------------------------- MA BAR DE NAV -------------------------*/
+
+#navbar{
+    
+    /*---positon static par defaut ne permet pas de deplacer les element ------*/
+    /*position: relative;
+    left: 500px;*/
+
+    position: fixed; /* fixe l'element sur la page, elle ne bougera plus meme lors du defilment de la page */
+    text-align: center;
+    border-color: grey;
+    /*background-color: #C4C4C4;*/
+    border-radius: 200px;
+    padding: 5px 20px 5px 20px;
+    margin: 25px 200px 5px 450px;
+    box-shadow: 0px 0px 10px black;
+    width: 800px;
+}
+
+#navbar a{
+    font-size: 24px;
+    text-decoration: none;
+    color: black;
+    display: inline-block;
+    cursor: grab;
+    border:2px groove black;
+    padding : 5px;
+    margin-left: 75px;
+    border-radius: 10px;
+    width: 100px; /* fonctionnne qu'avec les type block d'ou le inline-block*/
+    text-align: center;
+    background-color: white;
+    
+    
+}
+
+#navbar a:hover{
+    animation-name: bounce;
+    animation-duration: 0.5s;
+}
+/*---------------------------- MON MAIN  profil ---------------------------*/
+
+.profil{
+    margin-top: 152px;
+    margin-left: 58px;
+    height: 616px;
+    width: 404px;
+    text-align: left;
+    border: 4px groove black;
+    border-radius: 20px;
+    animation-name: media;
+    animation-duration: 5s;
+
+}
+
+
+
+.profil img{
+    height: 263px;
+    width: 300px;
+    border: 3px groove black;
+    margin: 28px 55px 15px 35px;
+}
+
+.profil h1{
+    font-size: 24px;
+    font-weight: bold;
+    /*text-decoration: underline;*/
+    border-bottom: 5px solid black;
+    margin: 5px 35px 15px 60px;
+    
+}
+
+.profil ul{
+    margin: 15px 35px 15px 60px;
+    padding: 0px;
+}
+
+.profil li{
+    font-size: 24px;
+    list-style: none;
+    line-height: 48px;
+    
+    
+}
+
+.profil img:hover, .profil h1:hover,ul:hover{
+    animation-name: bounce;
+    animation-duration: 1s;
+}
+
+
+
+/*---------------------------- MON MAIN  bio ---------------------------*/
+
+.Bio{
+    height: 616px;
+    width: 629px;
+    border: 4px groove black;
+    border-radius: 20px;
+    margin: 158px 58px 15px 58px;
+    padding-left: 44px;
+    animation-name: media;
+    animation-duration: 5s;
+}
+
+.Bio h1{
+    font-size: 36px;
+
+    
+}
+
+.Bio p {
+    font-size: 24px;
+    text-align: left;
+    align-items : top;
+    color: 181818;
+    height: 296px;
+    width: 520px;
+    line-height: 48px;
+    
+    
+}
+
+.Bio p:hover,.Bio h1:hover{
+    animation-name: bounce;
+    animation-duration: 1s;
+}
+
+
+/*----- MA BOITE MAIN AVEC LES DEUX PARTIE BIO ET PROFILE  ----------*/
+
+.main{
+    display: flex;
+    justify-content: space-between;
+}
+
+/*---------------------------- MON FOOTER  -------------------------*/
+
+#myfooter{
+    background-color: #A3A1E7;
+    display: flex;
+    justify-content: flex-end;
+   height: 80px;
+
+
+}
+
+
+#myfooter i{
+    margin: 35px 10px 5px 15px;
+    cursor: grab;
+}
+
+#myfooter span#contact{
+    padding: 20px 5px 5px 15px;
+    cursor: grab;
+    
+}
+
+#myfooter a{
+    font-size: 24px;
+    color: black;
+}
+
+#myfooter img{
+    height: 80px;
+}
+
+
+
+/*---------------------------- MES ANIMATION  -------------------------*/
+@keyframes bounce {
+    0%, 20%, 50%, 80%, 100% {transform: translateY(0);} 
+    40% {transform: translateY(-30px);} 
+    60% {transform: translateY(-15px);} 
+ } 
+
+ @keyframes media{
+
+    from{
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    to{
+
+    opacity: 1;
+    transform: translateX(0px);
+    }
+}
+
+@keyframes daang
+{
+
+  from
+  {
+    opacity: 0;
+    transform:translateY(-100px);
+  }
+
+  to
+  {
+    opacity: 1;
+    transform: translateY(0px);
+  }
+}
+
+
+
+
+
