@@ -100,7 +100,7 @@ body{
 }
 /*---------------------------- MON MAIN  profil ---------------------------*/
 
-.profil{
+#profil{
     margin-top: 152px;
     margin-left: 58px;
     height: 616px;
@@ -115,14 +115,14 @@ body{
 
 
 
-.profil img{
+#profil img{
     height: 263px;
     width: 300px;
     border: 3px groove black;
     margin: 28px 55px 15px 35px;
 }
 
-.profil h1{
+#profil h1{
     font-size: 24px;
     font-weight: bold;
     /*text-decoration: underline;*/
@@ -131,12 +131,12 @@ body{
     
 }
 
-.profil ul{
+#profil ul{
     margin: 15px 35px 15px 60px;
     padding: 0px;
 }
 
-.profil li{
+#profil li{
     font-size: 24px;
     list-style: none;
     line-height: 48px;
@@ -144,7 +144,7 @@ body{
     
 }
 
-.profil img:hover, .profil h1:hover,ul:hover{
+#profil img:hover, #profil h1:hover,ul:hover{
     animation-name: bounce;
     animation-duration: 1s;
 }
@@ -153,7 +153,7 @@ body{
 
 /*---------------------------- MON MAIN  bio ---------------------------*/
 
-.Bio{
+#Bio{
     height: 616px;
     width: 629px;
     border: 4px groove black;
@@ -164,13 +164,13 @@ body{
     animation-duration: 5s;
 }
 
-.Bio h1{
+#Bio h1{
     font-size: 36px;
 
     
 }
 
-.Bio p {
+#Bio p {
     font-size: 24px;
     text-align: left;
     align-items : top;
@@ -182,7 +182,7 @@ body{
     
 }
 
-.Bio p:hover,.Bio h1:hover{
+#Bio p:hover,#Bio h1:hover{
     animation-name: bounce;
     animation-duration: 1s;
 }
@@ -190,7 +190,7 @@ body{
 
 /*----- MA BOITE MAIN AVEC LES DEUX PARTIE BIO ET PROFILE  ----------*/
 
-.main{
+#main{
     display: flex;
     justify-content: space-between;
 }
