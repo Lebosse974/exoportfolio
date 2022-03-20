@@ -149,7 +149,23 @@ body{
     animation-duration: 1s;
 }
 
+.mesImg{
+    height: 600px;
+    width: 550px;
+    margin-left: 15px;
+}
 
+#grosBlocMain{
+    display:flex;
+    justify-content: space-around;
+    margin: 15px 25px;
+}
+.petitBlocMain{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
 
 /*---------------------------- MON MAIN  bio ---------------------------*/
 
